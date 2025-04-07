@@ -7,9 +7,7 @@ export const createStore = (reducer, initialState) => {
     }
 
     function dispatch(action) {
-        console.log(state, action);
         state = reducer(state, action);
-        console.log(state, action);
         subscribers.forEach(callback => callback())
     }
 
