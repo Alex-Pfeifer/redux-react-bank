@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 import App from './App.jsx'
 import {Provider} from "react-redux";
-import {store} from "./configureStore/strore.js";
+import {store} from "./app/strore.js";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
