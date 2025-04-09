@@ -1,8 +1,7 @@
 import {useState} from "react";
 import {useDispatch} from "react-redux";
 import {deposit, withdraw} from "../features/account/balanceSlice.js";
-import {addQuote} from "../features/quote/quoteSlice.js";
-import {fetchQuotes} from "../actions/asyncQuoteAction.js";
+import {fetchQuotes} from "../features/api/asyncQuoteAction.js";
 
 const Operation = () => {
     const [sum, setSum] = useState(0);
